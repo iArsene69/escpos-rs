@@ -21,6 +21,9 @@ use std::{
     time::Duration,
 };
 
+#[cfg(feature = "windows-driver")]
+pub mod windows_driver;
+
 /// Default timeout in seconds for read/write operations
 const DEFAULT_TIMEOUT_SECONDS: u64 = 5;
 
